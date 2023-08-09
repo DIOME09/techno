@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/head.ejs')%>
+    <link rel="stylesheet" href="main.css">
+    <title><%- title%></title>
+</head>
+<body>
+
+    <style>
+        .info{
+            height: 100%;
+            max-width: 700px;
+            min-width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            padding: 5%;
+        }
+        .info h2{
+            color: tomato;
+            font-size: 4em;
+            font-weight: bold;
+            width: 100%;
+        }
+        .info p{
+            font-size: 1.2em;
+        }
+    </style>
+    
+    <main>
+        <%- include('partials/navbar.ejs')%>
+
+        <section>
+            <img src="img_mision.png" alt="img_mision" width="350px">
+            <div class="info">
+                <h2>Misión</h2>
+                <p>Nuestra misión es ofrecer soluciones tecnológicas innovadoras que impulsen el crecimiento y la transformación digital de nuestros clientes. Nos comprometemos a brindar productos y servicios de calidad que satisfagan las necesidades de manera efectiva y eficiente.</p>
+            </div>
+        </section>
+        <section>
+            <div class="info">
+                <h2>Vision</h2>
+                <p>Ser reconocidos como líderes en el sector tecnológico, destacando por nuestra excelencia en la entrega de soluciones personalizadas y nuestra capacidad para adaptarnos y abrazar las últimas tendencias tecnológicas. Aspiramos a establecer relaciones duraderas con nuestros clientes, basadas en la confianza y el éxito mutuo.</p>
+            </div>
+            <img src="img_vision.png" alt="img_vision" width="350px">
+        </section>
+
+        <%- include('partials/footer.ejs')%>
+
+    </main>
+
+</body>
+<%- include('partials/script.ejs')%>
+</html>

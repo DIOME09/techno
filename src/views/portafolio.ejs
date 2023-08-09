@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/head.ejs')%>
+    <link rel="stylesheet" href="main.css">
+    <title><%- title%></title>
+</head>
+<body>
+
+    <style>
+        .info{
+            height: 100%;
+            max-width: 700px;
+            min-width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            padding: 5%;
+        }
+        .info h2{
+            color: tomato;
+            font-size: 4em;
+            font-weight: bold;
+            justify-content: center;
+            width: 100%;
+            text-align: left;
+        }
+        .info p{
+            font-size: 1.2em;
+        }
+        b{
+            color: tomato;
+        }
+    </style>
+    
+    <main>
+        <%- include('partials/navbar.ejs')%>
+
+        <section>
+            <div class="info">
+                <h2>Portafolio de proyectos</h2>
+                <p>Nuestro portafolio de proyectos muestra nuestra experiencia y el impacto que hemos tenido en diversas industrias. Hemos trabajado con empresas de diferentes tamaños y sectores, brindándoles soluciones tecnológicas a medida que han mejorado su eficiencia operativa y su presencia en línea. Estos son algunos de nuestros proyectos destacados.</p>
+            </div>
+            <img src="img_portafolio.png" alt="img_mision" width="400px">
+        </section>
+
+        <section class="d.flex gap-3">
+            <div class="card bg-warning bg-gradient text-black p-2" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Proyecto Comercial</b></h5>
+                    <p class="card-text">Desarrollo de una plataforma de comercio electrónico escalable para una
+                        empresa minorista líder</p>
+                </div>
+                <ul class="list-group list-group-flush bg-warning bg-gradient text-black">
+                    <li class="list-group-item bg-warning bg-gradient text-black">Diseño UX/UI</li>
+                    <li class="list-group-item bg-warning bg-gradient text-black">Creatividad</li>
+                    <li class="list-group-item bg-warning bg-gradient text-black">Lógica</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Link Page</a>
+                </div>
+            </div>
+            <div class="card bg-warning bg-gradient text-black p-2" style="width: 18rem;">
+                <img src="https://learn.microsoft.com/es-es/power-bi/consumer/mobile/media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-explore-page.png" height="200px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Aplicacion Movil</b></h5>
+                    <p class="card-text">Diseño y desarrollo de una aplicación móvil de reserva de citas para una
+                        clínica médica</p>
+                </div>
+                <ul class="list-group list-group-flush bg-warning bg-gradient text-black">
+                    <li class="list-group-item bg-warning bg-gradient text-black bg-warning bg-gradient text-black">Diseño UX/UI</li>
+                    <li class="list-group-item bg-warning bg-gradient text-black">Creatividad</li>
+                    <li class="list-group-item bg-warning bg-gradient text-black">Lógica</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Link Page</a>
+                </div>
+            </div>
+            <div class="card bg-warning bg-gradient text-black p-2" style="width: 18rem;">
+                <img src="https://i.ytimg.com/vi/2C_faqgFtjI/maxresdefault.jpg" height="200px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Inventario</b></h5>
+                    <p class="card-text">Implementación de un sistema de gestión de inventario personalizado.</p>
+                </div>
+                <ul class="list-group list-group-flush bg-warning bg-gradient text-black">
+                    <li class="list-group-item bg-warning bg-gradient text-black bg-warning bg-gradient text-black">Diseño UX/UI</li>
+                    <li class="list-group-item bg-warning bg-gradient text-black">Creatividad</li>
+                    <li class="list-group-item bg-warning bg-gradient text-black">Lógica</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Link Page</a>
+                </div>
+            </div>
+            <div class="card bg-warning bg-gradient text-black p-2" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Web App</b></h5>
+                    <p class="card-text">Diseño y desarrollo de un sitio web interactivo para una agencia de
+                        marketing digital</p>
+                </div>
+                <ul class="list-group list-group-flush bg-warning bg-gradient text-black">
+                    <li class="list-group-item bg-warning bg-gradient text-black bg-warning bg-gradient text-black">Diseño UX/UI</li>
+                    <li class="list-group-item bg-warning bg-gradient text-black">Creatividad</li>
+                    <li class="list-group-item bg-warning bg-gradient text-black">Lógica</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Link Page</a>
+                </div>
+            </div>
+        </section>
+
+        <%- include('partials/footer.ejs')%>
+
+    </main>
+
+</body>
+<%- include('partials/script.ejs')%>
+</html>
